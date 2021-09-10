@@ -1,0 +1,17 @@
+
+<html>
+<body>
+<form action="/sp/" method="POST">
+    {% csrf_token %}
+    Specialization<select name="s1">
+    <option>SELECT</option>
+    {% for st in stud %}
+    <option value="{{st.id}}">{{st.special}}</option>
+    {% endfor %}
+</select>
+
+</select>
+    <input type="submit" value="SHOW">
+</form>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<html>
+<body>
+<form method="POST" action="/insert2/" enctype="multipart/form-data">
+    {% csrf_token %}
+    Patient Name<input type="text" name="name">
+    Doctor<input type="text" name="doctor">
+    Bill<input type="text" name="bill">
+    Hospital<input type="text" name="hospital">
+    Image<input type="file" name="photo">
+
+    <input type="submit" name="submit" value="SUBMIT">
+</form>
+</body>
+</html>

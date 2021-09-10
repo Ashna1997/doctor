@@ -1,0 +1,11 @@
+<html>
+<body>
+<form method="POST" action="/insert3/" enctype="multipart/form-data">
+    {% csrf_token %}
+    Category ID<input type="text" name="categoryid" id="s1">
+    Specialization<input type="text" name="special" id="s2">
+
+    <input type="submit" name="submit" value="SUBMIT">
+</form>
+</body>
+</html>
